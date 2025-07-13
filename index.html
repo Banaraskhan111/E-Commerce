@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>E-Commerce Website</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo" tabindex="0">Khan-dev</div>
+  <button aria-label="Toggle menu" class="hamburger" aria-expanded="false" aria-controls="nav-menu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </button>
+  <ul id="nav-menu" role="menu">
+    <li><a href="#home" tabindex="1" role="menuitem">Home</a></li>
+    <li><a href="#products" tabindex="2" role="menuitem">Products</a></li>
+    <li><a href="#about" tabindex="3" role="menuitem">About</a></li>
+    <li><a href="#reviews" tabindex="4" role="menuitem">Reviews</a></li>
+    <li><a href="#contact" tabindex="5" role="menuitem">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home" role="banner" aria-label="Home introductory banner">
+  <h1>Welcome to ShopSphere</h1>
+  <p>Your ultimate destination for trendy and quality products at great prices.</p>
+  <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})" aria-label="Browse Products">Shop Now</button>
+</section>
+
+<main>
+  <section id="products" aria-label="Products section">
+    <h2>Our Products</h2>
+    <div class="product-grid" role="list">
+      <article class="product-card" role="listitem" tabindex="0">
+        <img src="img/shoes.avif" alt="Stylish Sneakers" />
+        <div class="product-info">
+          <h3>Stylish Sneakers</h3>
+          <p>$79.99</p>
+        </div>
+        <button aria-label="Add Stylish Sneakers to cart">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" tabindex="0">
+        <img src="img/watch.avif" alt="Elegant Watch" />
+        <div class="product-info">
+          <h3>Elegant Watch</h3>
+          <p>$129.99</p>
+        </div>
+        <button aria-label="Add Elegant Watch to cart">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" tabindex="0">
+        <img src="img/lbag.avif" alt="Classic Leather Handbag" />
+        <div class="product-info">
+          <h3>Classic Leather Handbag</h3>
+          <p>$149.99</p>
+        </div>
+        <button aria-label="Add Classic Leather Handbag to cart">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" tabindex="0">
+        <img src="img/head.avif" alt="Wireless Headphones" />
+        <div class="product-info">
+          <h3>Wireless Headphones</h3>
+          <p>$99.99</p>
+        </div>
+        <button aria-label="Add Wireless Headphones to cart">Add to Cart</button>
+      </article>
+    </div>
+    <div class="product-grid" role="list" style="margin-top: 4vh;">
+      <article class="product-card" role="listitem" tabindex="0">
+        <img src="img/img6.jpg" alt="Classic Leather Bag" />
+        <div class="product-info">
+          <h3>Classic Leather Bag</h3>
+          <p>$179.99</p>
+        </div>
+        <button aria-label="Add Classic Leather Bag to cart">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" tabindex="0">
+        <img src="img/img2.jpg" alt="Perfume" />
+        <div class="product-info">
+          <h3>Perfume</h3>
+          <p>$156.99</p>
+        </div>
+        <button aria-label="Add Perfume to cart">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" tabindex="0">
+        <img src="img/img3.jpg" alt="Classic Shirts" />
+        <div class="product-info">
+          <h3>Classic Shirts</h3>
+          <p>$170.99</p>
+        </div>
+        <button aria-label="Add Classic Shirts to cart">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" tabindex="0">
+        <img src="img/img5.jpg" alt="Wireless Headphones" />
+        <div class="product-info">
+          <h3>Wireless Headphones</h3>
+          <p>$120.99</p>
+        </div>
+        <button aria-label="Add Wireless Headphones to cart">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+
+  <section id="ads" aria-label="Advertisement promotion">
+    <h2>Limited Time Offer!</h2>
+    <p>Get 20% off on your first order. Use code: WELCOME20 at checkout. Hurry, offer ends soon!</p>
+  </section>
+
+  <section id="about" aria-label="About ShopSphere">
+    <h2>About ShopSphere</h2>
+    <p>Welcome to E-Com your trusted online store for quality products at great prices. We offer a wide range of products with fast delivery, secure payments, and friendly customer support. Shop with confidence and enjoy a smooth shopping experience with us!</p>
+  </section>
+
+  <section id="reviews" aria-label="Customer reviews and testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="review-cards">
+      <blockquote class="review-card" tabindex="0">
+        <p>This site has the best products and amazing customer support! Highly recommend.</p>
+        <footer class="reviewer">- Emily R.</footer>
+      </blockquote>
+      <blockquote class="review-card" tabindex="0">
+        <p>Love the smooth shopping experience and fast delivery. The product quality is top-notch.</p>
+        <footer class="reviewer">- Michael S.</footer>
+      </blockquote>
+      <blockquote class="review-card" tabindex="0">
+        <p>Great deals and promotions. Plus, the website looks modern and is easy to navigate.</p>
+        <footer class="reviewer">- Sofia L.</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="contact" aria-label="Contact form section">
+    <h2>Contact Us</h2>
+    <form onsubmit="event.preventDefault(); alert('Thank you for contacting us!'); this.reset();" aria-label="Contact form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required aria-required="true" placeholder="Your full name" />
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required aria-required="true" placeholder="Your email address" />
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required aria-required="true" placeholder="Your message"></textarea>
+      
+      <button type="submit" class="submit-btn" aria-label="Send message">Send Message</button>
+    </form>
+  </section>
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
