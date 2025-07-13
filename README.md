@@ -2,7 +2,7 @@ E-Commerce Website
 
 Welcome to my E-Commerce Website project! This web application is designed to simulate  online store, featuring responsive design, product listings, and a clean user interface.
 
-## 🚀 Features
+ Features
 
 - Responsive layout for mobile, tablet, and desktop views
 - Product showcase with images, titles, and prices
