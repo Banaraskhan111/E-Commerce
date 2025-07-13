@@ -24,7 +24,7 @@ ecommerce-website/
 ├── css/
 │ └── style.css
 ├── js/
-│ └── script.js (optional)
+│ └── script.js 
 ├── images/
 │ └── product-images/
 └── README.md
